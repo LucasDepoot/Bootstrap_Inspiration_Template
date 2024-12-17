@@ -1,0 +1,76 @@
+---
+import data from "../datas/entreprise.json";
+---
+<footer>
+    <div class="entreprise">
+        <h3>{data.entreprise}</h3>
+        <p>{data.footer}</p>
+    </div>
+    <div class="nav-footer">
+        <ul>
+            <li><a href="/">Accueil</a></li>
+            <li><a href="/service">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </div>
+    <div class="legal-footer">
+        <ul>
+            <li><a href="/mentions-legales">Mentions légales</a></li>
+            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
+            <li>2025@Tous droits réservés</li>
+        </ul>
+    </div>
+</footer>
+<style>
+    footer{
+        background: var(--color-background-linear-inverse);
+        color: var(--color-text-light);
+        padding: 1rem;
+    }
+    h3{
+        text-align: center;
+        margin: 0.5rem;
+    }
+    .entreprise{
+        margin: 1rem 0 ;
+    }
+    .nav-footer{
+        text-align: center;
+    }    
+    .legal-footer{
+        text-align: center;
+    }
+    li{
+        margin-bottom:0.5rem ;
+    }
+    @media(min-width:870px){
+        footer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-evenly
+        }
+        .entreprise>p{
+            text-align: center;
+        }
+        li{
+            font-size: 1.3rem;
+        }
+        a:hover{
+            color: var(--color-accent);
+            text-decoration: underline;
+            text-underline-offset: 0.2rem;
+        }
+    }
+    @media(min-width:1200px){
+        footer{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .entreprise, .legal-footer, .nav-footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+</style>

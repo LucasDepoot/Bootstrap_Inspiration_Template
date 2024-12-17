@@ -1,6 +1,6 @@
-## Template without navbar
+## Template Inspired by Bootstrap
 
-Template without navbar website that describes a business, its services, and includes a contact form powered by EmailJS for direct communication.
+Template Inspired by Bootstrap that describes a business, its services, and includes a contact form powered by EmailJS for direct communication.
 
 ### Stack
 - Astro

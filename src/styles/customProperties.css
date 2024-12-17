@@ -5,8 +5,8 @@
     --color-text-dark:#01060a;
     --color-text-light:#FCFDF9;
     --color-background:#FCFDF9;
-    --color-background-linear:linear-gradient(to right, #5a3f37, #2c7744); ;
-    --color-background-linear-inverse:linear-gradient(90deg,rgb(62, 151, 172)0%, rgba(9,63,104,1) 50%, rgb(62, 151, 172) 100%);
+    --color-background-linear:linear-gradient(to right, #5a3f37, #2c7744);
+    --color-background-linear-inverse:linear-gradient(to left, #5a3f37, #2c7744);
     --color-background-transparent:#fcfdf9b4;
     --font-title:"someFonts","someFonts";
     --font-text:"someFonts","someFonts";
