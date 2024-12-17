@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Livraison gratuite",
+        "icon": "/delivery.png",
+        "iconAlt":"",
+        "text":"Nous vous offrons la livraison gratuite dans un rayon de 30 km autour de Bordeaux pour faciliter votre approvisionnement en bois de chauffage.",
+        "path":"/contact"
+    },
+    {
+        "title": "Bois de qualité supérieure",
+        "icon": "/wood.png",
+        "iconAlt":"",
+        "text":"Notre bois est soigneusement sélectionné et séché pour garantir une combustion optimale et une chaleur durable. Choisissez parmi plusieurs essences : chêne, acacia ou mélange.",
+        "path":"/service"
+    },
+    {
+        "title": "Engagement écologique",
+        "icon": "/forest.png",
+        "iconAlt":"",
+        "text": "Notre bois de chauffage provient de forêts gérées durablement, garantissant une ressource renouvelable et respectueuse de l'environnement.",
+        "path":"/contact"
+    }
+]

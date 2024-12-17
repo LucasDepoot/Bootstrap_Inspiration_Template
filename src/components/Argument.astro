@@ -1,0 +1,67 @@
+---
+import data from "../datas/argument.json";
+---
+<section>
+    {data.map((i) => (
+        <div class="card">
+            <div class="title">
+                <img src={i.icon} alt={i.icon}/>
+                <h2>{i.title}</h2>
+            </div>
+            <p>{i.text}</p>
+            <a href={i.path}>En savoir plus</a>
+        </div>
+    ))}
+
+</section>
+<style>
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .card{
+        width: 90%;
+        margin: 1.5rem;
+        border:2px solid var(--color-secondary);
+        padding: 1rem;
+        border-radius: var(--border-radius);
+    }
+    h2{
+        color: var(--color-secondary);
+    }
+    img{
+        width: 60px;
+    }
+    p{
+        margin: 1rem auto;
+        width: 90%;
+    }
+    a{
+        color: var(--color-primary);
+    }
+    @media(min-width:870px){
+        .card{
+            width:70%;
+        }
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: 0.2rem;
+        }
+    }
+    @media(min-width:1200px){
+        section{
+            margin: 0 auto;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            padding: 2rem;
+        }
+        .card{
+            margin: 0 auto;
+            min-height: 380px;
+        }
+    }
+</style>

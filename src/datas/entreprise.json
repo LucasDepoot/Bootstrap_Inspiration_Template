@@ -1,0 +1,30 @@
+{
+    "metaDescription":"Découvrez Ampère Service, votre expert en solutions électriques. Nous offrons des services fiables et professionnels pour tous vos besoins en électricité, que ce soit pour des installations résidentielles, commerciales ou industrielles. Contactez-nous dès aujourd'hui pour une consultation gratuite et laissez-nous illuminer votre projet avec notre expertise et notre savoir-faire.",
+    "favicon":"/favicon.png",
+    "keyword":"entreprise, service, contact, électricien, électrique, installation, dépannage, résidentiel, commercial, sécurité, énergie",
+
+    "entreprise":"Bois Sauvage",
+    "siren": "123 123 123 123",
+    "service":"Installation Électrique, Énergies Renouvelables, Domotique",
+    "logo":"/bucheron.webp",
+    "logoAlt":"Bucher de Bois Sauvage",
+    "mail":"contact@amperservice.fr",
+    "mailImage":"/envelope-line-icon.png",
+    "phone":"06 05 04 03 02",
+    "phoneImage":"/phone-line-icon.png",
+    "location":"1, Rue du voltmetre 75000 Paris",
+    "locationImage":"./pin-line-icon.png",
+    "social": 
+        [
+            {
+                "link":"https://linkedin.com",
+                "image":"./instagram-icon.png"
+            },
+            {
+                "link":"https://facebook.fr",
+                "image":"./facebook-icon.png"
+            }
+        ],
+    "presentation": "Chez Bois Sauvage, nous sélectionnons avec soin les meilleurs bois pour vous offrir une chaleur naturelle et durable. Nos bûches de qualité supérieure sont idéales pour un chauffage efficace, économique et respectueux de l'environnement. Que ce soit pour une cheminée, un poêle ou une chaudière, nous garantissons un bois de chauffage sec, prêt à l'emploi, pour une expérience de confort optimal.",
+    "footer":"AmpèreService : Experts en Installation Électrique, Énergie Renouvelable et Domotique à Paris et ses environs. Contactez-nous pour une consultation gratuite et découvrez notre expertise, nos solutions personnalisées et notre service client exceptionnel."
+}

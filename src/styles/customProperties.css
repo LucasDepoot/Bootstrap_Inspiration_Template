@@ -1,0 +1,21 @@
+:root{
+    --color-primary:#2c7744;
+    --color-secondary:#5a3f37;
+    --color-accent:#e39b40;
+    --color-text-dark:#01060a;
+    --color-text-light:#FCFDF9;
+    --color-background:#FCFDF9;
+    --color-background-linear:linear-gradient(to right, #5a3f37, #2c7744); ;
+    --color-background-linear-inverse:linear-gradient(90deg,rgb(62, 151, 172)0%, rgba(9,63,104,1) 50%, rgb(62, 151, 172) 100%);
+    --color-background-transparent:#fcfdf9b4;
+    --font-title:"someFonts","someFonts";
+    --font-text:"someFonts","someFonts";
+    --border-radius:5px;
+    --fontsize-text:1.3rem;
+    --picture-tall-background:url('/tool.webp');
+    --picture-small-background:url('/tool-small.webp');
+    --hero-tall-top:75vh;
+    --hero-tall-left:50vw;
+    --hero-small-top:95vh;
+    --hero-small-left:50%;
+}
