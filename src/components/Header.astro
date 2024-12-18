@@ -39,6 +39,7 @@ import data from "../datas/entreprise.json";
         padding: 0.5rem;
         color: var(--color-text-light);
         margin: 0.5rem 0;
+        text-align: left;
     }
     .cta-container{
         display: flex;
@@ -75,6 +76,7 @@ import data from "../datas/entreprise.json";
         bottom:-4px;
         left: 3.5rem;
     }
+
     @media(min-width:870px){
         section{
             padding: 1.5rem 5rem;
@@ -92,16 +94,15 @@ import data from "../datas/entreprise.json";
             flex-direction: row;
         }
         p{
-            width: 45%;
             padding: inherit;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
         img{
             height: 450px;
             align-self: flex-end;
             position: relative;
             bottom: -24px;
-            animation: move 0.5s ease-in;
+            animation: move 0.8s ease-in;
         }
         .cta-contact:hover{
             color:var(--color-accent);
@@ -116,15 +117,21 @@ import data from "../datas/entreprise.json";
         @keyframes move {
             from{
                 transform:translateX(-100px);
+                opacity: 0.6;
             }
             to {
-                transform:translateX(0);   
+                transform:translateX(0);
+                opacity: 1;
             }
         }
     }
+
     @media(min-width:1200px){
         .container-text{
             margin-left: 10rem;
+        }
+        p{
+            width: 60%;
         }
         img{
             height: inherit;
@@ -132,9 +139,11 @@ import data from "../datas/entreprise.json";
         @keyframes move {
             from{
                 transform:translateX(-200px);
+                opacity: 0.6;
             }
             to {
-                transform:translateX(0);   
+                transform:translateX(0);
+                opacity: 1;
             }
         }
     }
