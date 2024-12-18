@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../datas/service.json";
+---
+<Layout title="Notre bois">
+    <section>
+        {data.map((i)=>(
+            <div class={i.class}>
+                <div>
+                    <h2 >{i.title}</h2>
+                </div>
+                <div class="tarif">
+                    <p>Coupé en bûches de 1 mètre:</p>
+                    <p>{i.prix[0]} Euros</p>
+                    <p>Coupé en bûches de 50 centimètre:</p>
+                    <p>{i.prix[1]} Euros</p>
+                    <p>Coupé en bûches de 30 centimètre:</p>
+                    <p>{i.prix[2]} Euros</p>
+                </div>
+                <a href="/contact">Faites vous livrer</a>
+            </div>
+        ))}
+    </section>
+    <style>
+        h2{
+            text-align: center;
+            background: linear-gradient(360deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.40) 35%, rgba(0,0,0,0.40) 65%, rgba(0,0,0,0) 100%);
+            font-size: 5rem;
+            height:200px;
+            align-content: center;
+            color: var(--color-text-light);
+        }
+        .chene{
+            background:url("./chene_small.webp");
+            padding-bottom: 4rem;
+            border-bottom:5px solid var(--color-secondary);
+        }
+        .acacia{
+            background:url("./acacia_small.webp");
+            padding-bottom: 4rem;
+            border-bottom:5px solid var(--color-secondary);
+        }
+        .melange{
+            background:url("./melange_small.webp");
+            padding-bottom: 4rem;
+        }
+        .tarif{
+            background: rgba(0,0,0,0.50);
+            margin: 0 1rem 2rem;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 70% auto;
+            grid-template-rows: repeat(3,1fr);
+            color: var(--color-text-light);
+        }
+        p{
+            border: 1px solid var(--color-primary);
+            align-content: center;
+        }
+        a{
+            display: block;
+            width: 90%;
+            border-radius: var(--border-radius);
+            padding: 0.5rem;
+            background: var(--color-primary);
+            margin: 0 auto;
+            text-align: center;
+            color: var(--color-text-light);
+            border: 1px solid var(--color-accent);
+        }
+    @media(min-width:870px){
+        h2{
+            height: 200px;
+        }
+        .tarif{
+            width: 50%;
+            margin: 0 auto 2rem;
+        }
+        a{
+            width: 50%;
+            margin-bottom:2rem;
+        }
+        a:hover{
+            text-decoration: underline;
+            text-underline-offset: 0.3rem;
+            color: var(--color-accent);
+        }
+    }
+    @media(min-width:1200px){
+        h2{
+            font-size: 8rem;
+            height: 200px;
+        }
+        .chene{
+            background: url("./chene_tall.webp");
+            padding-bottom: 8rem;
+        }
+        .acacia{
+            background: url("./acacia_tall.webp");
+            padding-bottom: 8rem;
+        }
+        .melange{
+            background: url("./melange_tall.webp");
+            padding-bottom: 8rem;
+        }
+        .tarif{
+            width: 30%;
+            margin: 2rem auto;
+            padding: 0;
+        }
+        p{
+            padding: 1rem;
+        }
+        a{
+            width: 30%;
+            margin: 0 auto;
+        }
+    }
+    </style>
+</Layout>

@@ -12,10 +12,6 @@
     --font-text:"someFonts","someFonts";
     --border-radius:5px;
     --fontsize-text:1.3rem;
-    --picture-tall-background:url('/tool.webp');
-    --picture-small-background:url('/tool-small.webp');
-    --hero-tall-top:75vh;
-    --hero-tall-left:50vw;
-    --hero-small-top:95vh;
-    --hero-small-left:50%;
+    --position-small:-4px;
+    --position-medium:-24px:
 }

@@ -2,7 +2,55 @@
 <section class="navbar-container">
     <ul class="navbar">
         <li class="navbar-list"> <a href="/">Accueil</a></li>
-        <li class="navbar-list"><a href="/services">Services</a></li>
+        <li class="navbar-list"><a href="/services">Notre bois</a></li>
         <li class="navbar-list"><a href="/contact">Contact</a></li>
     </ul>
+    <a href="tel:+33624170229">06 24 17 02 29</a>
 </section>
+<style>
+    .navbar-container{
+    width: 100%;
+    background: var(--color-background-linear);
+    padding:1rem 0;
+    color: var(--color-text-light);
+}
+.navbar{
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+}
+.navbar-list{
+    margin: 0 1rem;
+}
+section > a{
+    color: var(--color-accent);
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+}
+@media(min-width:750px){
+    section{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar-container{
+        padding: 0.5rem 0.5rem;
+    }
+    .navbar{
+        margin: inherit;
+    }
+    .navbar a:hover{
+        color: var(--color-accent);
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+    section > a{
+        margin-top: initial;
+        margin-right: 0.5rem;
+    }
+    section > a:hover{
+        text-decoration: underline;
+        text-underline-offset: 0.2rem;
+    }
+
+</style>

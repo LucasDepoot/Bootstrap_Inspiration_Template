@@ -1,19 +1,19 @@
 ---
 import '../styles/customProperties.css';
 import '../styles/global.css';
-import "../styles/navbar.css";
 import Footer from '../components/Footer.astro';
 import Navbar from '../components/Navbar.astro';
-const {title} = Astro.props
+import data from "../datas/entreprise.json";
+const {title} = Astro.props;
 ---
 <!doctype html>
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={data.favicon} />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{data.entreprise} -- {title}</title>
 	</head>
 	<body>
 		<Navbar />
