@@ -11,11 +11,11 @@ import data from "../datas/service.json";
                 </div>
                 <div class="tarif">
                     <p>Coupé en bûches de 1 mètre:</p>
-                    <p>{i.prix[0]} Euros</p>
+                    <p>{i.prix[0]} Euros TTC</p>
                     <p>Coupé en bûches de 50 centimètre:</p>
-                    <p>{i.prix[1]} Euros</p>
+                    <p>{i.prix[1]} Euros TTC</p>
                     <p>Coupé en bûches de 30 centimètre:</p>
-                    <p>{i.prix[2]} Euros</p>
+                    <p>{i.prix[2]} Euros TTC</p>
                 </div>
                 <a href="/contact">Faites vous livrer</a>
             </div>
@@ -45,11 +45,11 @@ import data from "../datas/service.json";
             padding-bottom: 4rem;
         }
         .tarif{
-            background: rgba(0,0,0,0.50);
+            background: #5a3f37d2;
             margin: 0 1rem 2rem;
             text-align: center;
             display: grid;
-            grid-template-columns: 70% auto;
+            grid-template-columns: 60% auto;
             grid-template-rows: repeat(3,1fr);
             color: var(--color-text-light);
         }

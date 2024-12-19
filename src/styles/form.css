@@ -41,13 +41,13 @@ form button{
     text-underline-offset: 0.2rem;   
 }
 textarea:focus-visible{
-    border-color: var(--color-secondary);
+    border-color: var(--color-accent);
 }
 input:focus{
-    border-color: var(--color-secondary);
+    border-color: var(--color-accent);
 }
 form button:hover{
-    color: var(--color-secondary);
+    color: var(--color-accent);
 }
 .loader {
     margin: 1rem auto;

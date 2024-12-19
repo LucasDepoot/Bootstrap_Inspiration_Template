@@ -1,0 +1,25 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Form from "../components/Form.jsx";
+import data from "../datas/entreprise.json"
+---
+<Layout title="Contact">
+    <section id="contact">
+        <p>Vous souhaitez obtenir un devis, des informations sur nos services, ou tout autre demande, contactez nous. Nous vous répondrons au plus vite.</p>
+        <p>Vous pouvez nous contacter directement par mail à l'adresse suivante : <a href={`mailto:${data.mail}`}>{data.mail}</a> 
+        <p>Ou via ce formulaire de contact : </p>
+        <Form client:load/>
+    </section>
+    <style>
+        p{
+            width: 80%;
+            margin: 2rem auto;
+        }
+        a{
+            padding: 0.1rem 0.3rem;
+            background: var(--color-primary);
+            border-radius: var(--border-radius);
+            color: var(--color-text-light);
+        }
+    </style>
+</Layout>
